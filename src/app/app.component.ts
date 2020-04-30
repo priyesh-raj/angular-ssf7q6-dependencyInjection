@@ -9,13 +9,13 @@ import { DisplayService } from './display.service'
 })
 export class AppComponent implements OnInit  {
   name = 'Angular';
-  activeUsers: string[] = []
-  inactiveUsers: string[] = []
+  // activeUsers: string[] = []
+  // inactiveUsers: string[] = []
   constructor(private displayService : DisplayService) {}
 
   ngOnInit() {
-    this.activeUsers = this.displayService.showactiveUser()
-    this.inactiveUsers = this.displayService.showinactiveUser()
+    // this.activeUsers = this.displayService.showactiveUser()
+    // this.inactiveUsers = this.displayService.showinactiveUser()
   }
   
 }

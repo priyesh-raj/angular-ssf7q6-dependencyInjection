@@ -1,1 +1,1 @@
-<p *ngFor="let item of user"><a href="#" (click)="changeState()">{{item}}</a></p>
+<p *ngFor="let item of user;let i = index"><a href="#" (click)="changeState(i)">{{ item }}</a></p>

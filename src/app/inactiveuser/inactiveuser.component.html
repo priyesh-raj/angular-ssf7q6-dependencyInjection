@@ -1,1 +1,1 @@
-<p *ngFor="let item of user"><a href="#">{{ item }}</a></p>
+<p *ngFor="let item of user;let i = index"><a href="#" (click)="this.userservice.changeStateActive(i)">{{ item }}</a></p>
