@@ -22,7 +22,7 @@ export class UserService {
     this.displayservice.inactiveUser.push(this.newItem)
     this.displayservice.activeUser.splice(evtData,1)
     this.activeToInactiveCount++
-    console.log('inside changeStateInactive ' +this.activeToInactiveCount)
+    this.counterservice.logFunc('active to inactive',this.activeToInactiveCount)
   }
 
 }
