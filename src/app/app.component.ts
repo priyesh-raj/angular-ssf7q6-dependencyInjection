@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  activeUser:string[] = ['Max','Charles']
+  inactiveUser: string[] = ['Alonso','Michael']
 }
