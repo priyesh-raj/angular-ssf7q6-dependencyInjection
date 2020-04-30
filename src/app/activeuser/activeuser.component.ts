@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { DisplayService } from '../display.service'
 
 @Component({
   selector: 'app-activeuser',
@@ -6,14 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./activeuser.component.css']
 })
 export class ActiveuserComponent implements OnInit {
-
-  constructor() { }
+  user: string[]
+  constructor(private displayservice: DisplayService) { }
 
   ngOnInit() {
+    this.user = this.displayservice.showactiveUser()
   }
 
   changeState() {
-    
+
   }
 
 }
